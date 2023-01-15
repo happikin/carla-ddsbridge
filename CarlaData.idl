@@ -1,0 +1,34 @@
+module CarlaData {
+
+    struct Pixel {
+        octet b;
+        octet g;
+        octet r;
+        octet a;
+    };
+
+    @topic
+    struct RGBSensor {
+        @key long m_dataid;
+        float m_timestamp;
+        octet m_pixel_size;
+        octet m_height;
+        octet m_width;
+        sequence<Pixel> m_raw_buffer;
+    };
+
+    struct RadarPoint {
+        float velocity;
+        float azimuth;
+        float altitude;
+        float depth;
+    };
+
+    @topic
+    struct RadarSensor {
+        @key long m_dataid;
+        float m_timestamp;
+        sequence<RadarPoint> m_point_cloud;
+    };
+    
+};

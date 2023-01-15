@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/libcarla-install/include",
+                "/usr/include/x86_64-linux-gnu/c++/11",
+                "/usr/include/x86_64-linux-gnu",
+                "${workspaceFolder}/build/opendds_generated",
+                "/home/happikin/OpenDDS-3.20",
+                "/home/happikin/OpenDDS-3.20/**",
+                "/home/happikin/OpenDDS-3.20/ACE_wrappers",
+                "/home/happikin/OpenDDS-3.20/ACE_wrappers/TAO",
+                "/home/happikin/OpenDDS-3.20/dds",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/libcarla-install/include/system"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-x86"
+        }
+    ],
+    "version": 4
+}
